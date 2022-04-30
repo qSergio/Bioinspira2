@@ -40,7 +40,7 @@
 % The "\note" macro will give a warning: "Ignoring empty anchor..."
 % you can safely ignore it.
 
-\affiliation{Facultad de Ciencias\note{Curso: Seminario de Matemáticas Aplicadas 1}, UNAM.}
+\affiliation{Facultad de Ciencias\note{Curso: Seminario de Matemáticas Aplicadas}, UNAM.}
 %\affiliation[b]{Another University,\\different-address, Country}
 %\affiliation[c]{A School for Advanced Studies,\\some-location, Country}
 
@@ -61,11 +61,61 @@
 \maketitle
 \flushbottom
 
-\section{T Some examples and best-practices}
+\section{Introducción}
 \label{sec:intro}
 
+
+Aprendizaje.\\
+
+\parindent=0cm Memoria.\\
+
+Este trabajo. \\
+
+\section{Redes Neuronales}
+\label{sec:nn}
+
+ Una red neuronal artificial~\cite{dl} es un modelo matemático inspirado en redes neuronales biológicas. Consiste de un grupo entrelazado de nodos o neuronas artificiales individuales cuya estructura se escoge de acuerdo al problema que se enfrenta. \\
+
+La estructura y funcionamiento del sistema nervioso central~\cite{neuro} tiene como parte constituyente a la neurona biológica que consiste en un cuerpo celular, el axón, las dendritas y las sinapsis. Estas últimas son las conexiones entre neuronas. El mecanismo sináptico es el que se busca mapear a un algoritmo analítico.\\
+
+Una neurona artificial, ver figura~\ref{neuron}, se conoce también como \emph{perceptrón} y su forma básica es la siguiente:
+
+\begin{equation}
+  y(x_1, \dots, x_n) = f(w_1 x_1 + \dots w_n x_n + b)
+\end{equation}
+
+Donde cada $x_i$ se toma en cuenta individualmente por medio de un peso aprendido $w_i$. Esto nos permite construir un mapeo de $(x_1, \dots, x_n) = \bf{x} \in \mathbb{R}^n$ a la variable de salida $y$. La función $f$ se puede definir como una función de salto:
+
+\begin{equation*}
+f(s)=\begin{cases}
+          0 \quad &\text{if} \, s \leq 0 \\
+          1 \quad &\text{if} \, s > 0 \\
+     \end{cases}
+\end{equation*}
+
+El valor $b$ conocido como \emph{bias o sesgo} permite aplicar la función $f$ a hiperplanos que no pasan por el origen. De esta forma el perceptrón, ver figura~\ref{perceptron}, es la composición de una transformación afín seguida de una función de salto que también se denomina como \emph{función de activación}. Esta no necesariamente es una función de salto y se elige según el problema que se esta tratando de resolver. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=55mm]{neuron.PNG}
+\caption{\small{Neurona artificial. }}
+\label{neuron}
+\end{center}
+\end{figure}
+%\includegraphics[width=.4\textwidth,origin=c]{perceptron.PNG}
+\begin{figure}
+\begin{center}
+\includegraphics[height=50mm]{perceptron.PNG}
+\caption{\small{Esquema de un Perceptrón. }}
+\label{perceptron}
+\end{center}
+\end{figure}
+
+\section{Redes de Memoria Asociada}
+\label{sec:hop}
+
 For internal references use label-refs: see section~\ref{sec:intro}.
-Bibliographic citations can be done with cite: refs.~\cite{a,b,c}.
+Bibliographic citations can be done with cite: refs.~\cite{a,b0,c}.
 When possible, align equations on the equal sign. The package
 \texttt{amsmath} is already loaded. See \eqref{eq:x}.
 \begin{equation}
@@ -80,6 +130,13 @@ z &= 3 \,.
 \end{equation}
 Also, watch out for the punctuation at the end of the equations.
 
+
+\begin{equation*}
+g(x)=\begin{cases}
+          x \quad &\text{if} \, x \in \mathbb{Q} \\
+          -x \quad &\text{if} \, x \notin \mathbb{Q} \\
+     \end{cases}
+\end{equation*}
 
 If you want some equations without the tag (number), please use the available
 starred-environments. For example:
@@ -179,6 +236,12 @@ after the paper has been written.
 %articles: author(s), title, journal name, volume, year, page number, arXiv-number. Addi- tional information (erratum, addendum) can be specified too.
 
 \begin{thebibliography}{99}
+
+\bibitem{dl}
+Goodfellow I., Bengio Y., Courville A., \emph{Deep Learning}, MIT Press, 2016.
+
+\bibitem{neuro}
+Bear M., Connors B., Paradiso M., \emph{Neuroscience. Exploring the Brain}, Wolters Kluwer, 2015.
 
 \bibitem{a}
 Hopfield J. J., \emph{Neural networks and physical systems with emergent collective computational abilities}, \emph{Proc. Natl. Acad. Sci. USA} {\bf 79} (1982) pp. 2554-2558.
