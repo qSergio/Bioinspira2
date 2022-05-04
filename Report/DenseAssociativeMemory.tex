@@ -53,7 +53,7 @@
 
 
 
-\abstract{Abstract... \emph{some text}}
+\abstract{Reporte de trabajo realizado... \emph{some text}}
 
 
 
@@ -97,7 +97,7 @@ El valor $b$ conocido como \emph{bias o sesgo} permite aplicar la función $f$ a
 
 \begin{figure}
 \begin{center}
-\includegraphics[height=55mm]{neuron.PNG}
+\includegraphics[height=60mm]{neuron.PNG}
 \caption{\small{Neurona artificial. }}
 \label{neuron}
 \end{center}
@@ -105,7 +105,7 @@ El valor $b$ conocido como \emph{bias o sesgo} permite aplicar la función $f$ a
 %\includegraphics[width=.4\textwidth,origin=c]{perceptron.PNG}
 \begin{figure}
 \begin{center}
-\includegraphics[height=50mm]{perceptron.PNG}
+\includegraphics[height=40mm]{perceptron.PNG}
 \caption{\small{Esquema de un Perceptrón. }}
 \label{perceptron}
 \end{center}
@@ -113,6 +113,24 @@ El valor $b$ conocido como \emph{bias o sesgo} permite aplicar la función $f$ a
 
 \section{Redes de Memoria Asociada}
 \label{sec:hop}
+
+Una red de \emph{Hopfield}~\cite{a} es un tipo de red neuronal artificial que busca modelar la forma en cómo usamos la memoria para reconocer patrones. \\
+
+Reconocimiento de patrones es una tarea que realizamos constantemente, si nos preguntan por un físico inglés cuyo nombre termina con la letra $n$ es muy posible que recordemos a \emph{Newton}, más no sabemos si es la entrada $127$ de nuestros registros mentales de científicos famosos. \\
+
+The phenomenon of pattern association may be formally stated as follows. Let s1 : t1, s2 : t2, …, sk : tk be a number of pairs of patterns. If there is a system that yields the pattern ti when presented as input with the pattern si, i = 1, …, k, then we say that the system is an associative or content addressable memory storing the pattern pairs s1: t1, …., sk : tk. The act of relating a given pattern si to its corresponding stored pattern ti is known as pattern association. One important property of an associative memory is its capacity to correctly associate a noisy input pattern to the desired output pattern. However, there is a limit to the extent of noise tolerable to a given associative memory network. \\
+
+Associative memory neural nets are those which store a set of pattern associations. There are two kinds of associative memory neural nets. These are auto-associative and hetero-associative. In auto-associative neural nets, the input and output patterns are identical. In hetero-associative neural nets, the inputs and the outputs are different. \\
+
+Regarding architecture, an associative memory neural net may be either feedforward type or recurrent (iterative) type. In feedforward nets, signals are unidirectional. They flow from input to output and not in the reverse direction. In recurrent (or iterative) nets, signals flow back and forth between the input and the output until the net reaches an equilibrium state. \\
+
+La \emph{memoria asociativa} es el almacenamiento y recuperación de información por asociación datos de entrada. \\
+
+
+
+
+\appendix
+\section{Ayuda latex}
 
 For internal references use label-refs: see section~\ref{sec:intro}.
 Bibliographic citations can be done with cite: refs.~\cite{a,b0,c}.
@@ -216,7 +234,7 @@ from the hyperref package when you have math in the section titles
 
 
 
-\appendix
+
 \section{Some title}
 Please always give a title also for appendices.
 
