@@ -74,14 +74,14 @@ Este trabajo. \\
 \section{Redes Neuronales}
 \label{sec:nn}
 
- Una red neuronal artificial~\cite{dl} es un modelo matemático inspirado en redes neuronales biológicas. Consiste de un grupo entrelazado de nodos o neuronas artificiales individuales cuya estructura se escoge de acuerdo al problema que se enfrenta. \\
+ Una red neuronal artificial~\cite{dl, rr} es un modelo matemático inspirado en redes neuronales biológicas. Consiste de un grupo entrelazado de nodos o neuronas artificiales individuales cuya estructura se escoge de acuerdo al problema que se enfrenta. \\
 
 La estructura y funcionamiento del sistema nervioso central~\cite{neuro} tiene como parte constituyente a la neurona biológica que consiste en un cuerpo celular, el axón, las dendritas y las sinapsis. Estas últimas son las conexiones entre neuronas. El mecanismo sináptico es el que se busca mapear a un algoritmo analítico.\\
 
 Una neurona artificial, ver figura~\ref{neuron}, se conoce también como \emph{perceptrón} y su forma básica es la siguiente:
 
 \begin{equation}
-  y(x_1, \dots, x_n) = f(w_1 x_1 + \dots w_n x_n + b)
+  y(x_1, \dots, x_n) = f(w_1 x_1 + \dots w_n x_n + b). \\
 \end{equation}
 
 Donde cada $x_i$ se toma en cuenta individualmente por medio de un peso aprendido $w_i$. Esto nos permite construir un mapeo de $(x_1, \dots, x_n) = \bf{x} \in \mathbb{R}^n$ a la variable de salida $y$. La función $f$ se puede definir como una función de salto:
@@ -257,6 +257,9 @@ after the paper has been written.
 
 \bibitem{dl}
 Goodfellow I., Bengio Y., Courville A., \emph{Deep Learning}, MIT Press, 2016.
+
+\bibitem{rr}
+Rojas R., \emph{Neural Networks: A Systematic Introduction}, Springer, 1996.
 
 \bibitem{neuro}
 Bear M., Connors B., Paradiso M., \emph{Neuroscience. Exploring the Brain}, Wolters Kluwer, 2015.
